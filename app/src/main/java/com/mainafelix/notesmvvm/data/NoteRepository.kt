@@ -8,5 +8,16 @@ class NoteRepository(private  val notesDao: NotesDao) {
     // and we are getting all the notes from our DAO class.
     val  allNotes : LiveData<List<Note>> = notesDao.getAll()
 
+    suspend fun insert(note: Note){
+        notesDao.insert(note)
+    }
+    suspend fun delete(note: Note){
+        notesDao.delete(note)
+    }
+    suspend fun update(note: Note){
+        notesDao.update(note)
+    }
+
+
 
 }
