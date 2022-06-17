@@ -27,7 +27,6 @@ abstract class NoteDatabase:RoomDatabase() {
                 INSTANCE = instance
                 //return instance
                 instance
-
             }
         }
 
