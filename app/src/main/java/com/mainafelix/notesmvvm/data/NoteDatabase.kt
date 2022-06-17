@@ -14,7 +14,7 @@ abstract class NoteDatabase:RoomDatabase() {
         //@volatle means the instance will not be stored in the local cache
         @Volatile
         private  var  INSTANCE :NoteDatabase? =null
-        fun getDataase(context: Context):NoteDatabase{
+        fun getDatabase(context: Context):NoteDatabase{
             // if the INSTANCE is not null, then return it,
             // if it is, then create the database
             // synchronisation prevents different threads from accessing the databae instance at the same time
