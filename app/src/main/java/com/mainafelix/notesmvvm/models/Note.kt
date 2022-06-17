@@ -1,4 +1,4 @@
-package com.mainafelix.notesmvvm
+package com.mainafelix.notesmvvm.models
 
 import android.content.ClipDescription
 import androidx.room.ColumnInfo
