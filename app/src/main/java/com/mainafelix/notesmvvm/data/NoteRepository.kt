@@ -8,4 +8,5 @@ class NoteRepository(private  val notesDao: NotesDao) {
     // and we are getting all the notes from our DAO class.
     val  allNotes : LiveData<List<Note>> = notesDao.getAll()
 
+
 }
